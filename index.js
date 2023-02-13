@@ -34,7 +34,8 @@ const getTempPhrase = function (tempF) {
 const makeOutputData = function (locationData) {
   const tempF = locationData["current"]["temp_f"];
   const output = {
-    location_name: `${locationData["location"]["name"]}, ${locationData["location"]["region"]}`,
+    name: `${locationData["location"]["name"]}`,
+    region: `${locationData["location"]["region"]}`,
     country: `${locationData["location"]["country"]}`,
     temp_celsius: `${locationData["current"]["temp_c"]}`,
     temp_fahrenheit: `${tempF}`,
