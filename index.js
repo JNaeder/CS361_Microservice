@@ -48,6 +48,10 @@ const makeOutputData = function (locationData) {
 app.get(
   "/weather",
   asyncHandler(async (req, res) => {
+    console.log(
+      `Request-----Latitude:${req.query.lat} - Longitude:${req.query.long}`
+    );
+
     const locationData = await getLocationData(req.query.lat, req.query.long);
     const output = makeOutputData(locationData);
     res.send(output);
