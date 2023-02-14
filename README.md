@@ -39,4 +39,4 @@ Response is a JSON Object with the following key-value pairs:
 
 ## UML Sequence Diagram
 
-Coming Soon
+![UML Sequence Diagram](/Screenshot%202023-02-14%20001753.jpg)
