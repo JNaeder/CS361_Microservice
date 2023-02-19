@@ -15,6 +15,7 @@ const weatherAPI = process.env.WEATHER_KEY;
 // My Functions
 const getLocationData = async function (lat, long) {
   const url = `https://api.weatherapi.com/v1/current.json?key=${weatherAPI}&q=${lat},${long}&aqi=no`;
+  console.log(url);
   const output = await axios.get(url);
   return output["data"];
 };

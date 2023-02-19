@@ -1,7 +1,8 @@
 const axios = require("axios");
 
 const getWeather = async function (lat, long) {
-  const url = `https://cs361weather.onrender.com/weather?lat=${lat}&long=${long}`;
+  // const url = `https://cs361weather.onrender.com/weather?lat=${lat}&long=${long}`;
+  const url = `https://127.0.0.1:5000/weather?lat=${lat}&long=${long}`;
   const output = await axios.get(url);
   console.log(output.data);
 };
