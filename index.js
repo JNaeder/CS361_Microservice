@@ -8,7 +8,7 @@ const phrases = require("./phrases");
 
 // Variables
 const app = express();
-app.use(cors);
+app.use(cors());
 const port = 5000;
 const weatherAPI = process.env.WEATHER_KEY;
 
