@@ -2,11 +2,13 @@
 require("dotenv").config();
 const axios = require("axios");
 const express = require("express");
+const cors = require("cors");
 const asyncHandler = require("express-async-handler");
 const phrases = require("./phrases");
 
 // Variables
 const app = express();
+app.use(cors);
 const port = 5000;
 const weatherAPI = process.env.WEATHER_KEY;
 

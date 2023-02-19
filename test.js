@@ -8,5 +8,5 @@ const getWeather = async function (lat, long) {
 
 // getWeather(48.8566, 2.3522);
 // getWeather(41.948438, -87.655333);
-// getWeather(11.5798855, 21.6978864);
-getWeather(32.3132695, 117.8908925);
+getWeather(35.7012358, 139.7740214);
+// getWeather(32.3132695, 117.8908925);
